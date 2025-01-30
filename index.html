@@ -12,15 +12,18 @@
 </head>
 
 <body class="min-h-screen">
-    <div class="h-[600px] bg-headers bg-no-repeat bg-cover">
+    <div class="h-[600px] bg-headers bg-fixed bg-no-repeat bg-cover">
         <div class="absolute h-[600px] inset-0 bg-black bg-opacity-30">
             <div class="relative">
-                <nav id="navbar" class="w-[95%] py-5 mx-auto flex justify-between">
-                    <div class="flex gap-4 items-center">
-                        <img src="img/2025.png" class="h-20 rounded-full" alt="">
-                        <p class="text-white text-3xl">The Parfume</p>
+                <nav id="navbar" class="w-full px-5 py-5 flex justify-between items-center flex-wrap fixed top-0 transition-all duration-300">
+                    <div class="flex gap-4 items-center w-[70%]">
+                        <img src="img/2025.png" class="h-16 rounded-full" alt="">
+                        <p class="text-white text-2xl">The Parfume</p>
                     </div>
-                    <div class="flex gap-5" id="">
+                    <button class="lg:hidden block text-white text-2xl" id="tombol">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="gap-5 hidden lg:flex lg:flex-row flex-col w-full lg:w-[10%] mt-5 text-center" id="menu">
                         <a href="#" class="text-white hover:text-gray-400 text-1xl">Home</a>
                         <a href="#" class="text-white hover:text-gray-400 text-1xl">Blog</a>
                         <a href="#" class="text-white hover:text-gray-400 text-1xl"><i
@@ -28,15 +31,16 @@
                     </div>
                 </nav>
                 <div class="h-[400px] flex justify-center items-center flex-col gap-6">
-                    <h1 class="text-7xl font-bold text-white">The Parfume</h1>
-                    <p class="text-gray-300 text-2xl">Wujudkan Karakter Anda dengan Aroma yang Tepat</p>
+                    <h1 class="lg:text-7xl text-5xl font-bold text-white">The Parfume</h1>
+                    <p class="text-gray-300 text-2xl mx-5 text-center">Wujudkan Karakter Anda dengan Aroma yang Tepat
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="w-[80%] mx-auto py-10">
         <h2 class="font-bold text-2xl text-center">KENALI PARFUME KAMI</h2>
-        <div class="flex items-center gap-10 mt-10">
+        <div class="flex-col flex lg:flex-row items-center gap-10 mt-10">
             <img src="img/pink-bloom-perfume-gucci-4k-jncnu583h0ou7083.jpg" alt="Kenali Parfum Kami" class="h-[300px]">
             <p class="text-gray-700 text-justify test-xl">
                 The Parfume menghadirkan keindahan aroma yang sempurna untuk menemani setiap perjalanan hidup
@@ -52,8 +56,8 @@
     <section class="py-16 bg-yellow-700">
         <div class="w-[80%] mx-auto">
             <h2 class="text-center text-3xl text-white font-bold mb-12">KEUNGGULAN</h2>
-            <div class="flex justify-between gap-10">
-                <div class="flex flex-col gap-8 w-[35%]">
+            <div class="flex flex-col lg:flex-row justify-between gap-10">
+                <div class="flex flex-col gap-8 lg:w-[35%] w-full">
                     <img src="img/illustration-ultra-realistic-4k-image-perfume_756405-55407.avif"
                         alt="aroma tahan lama" class="h-[350px] w-[400px] rounded-2xl">
                     <h3 class="text-center text-4xl text-white font-bold mb-5">Aroma Tahan Lama</h3>
@@ -61,14 +65,14 @@
                         jam, cocok
                         untuk aktivitas sepanjang hari.</p>
                 </div>
-                <div class="flex flex-col gap-8 w-[35%]">
+                <div class="flex flex-col gap-8 lg:w-[35%] w-full">
                     <img src="img/illustration-ultra-realistic-4k-image-perfume_756405-55399 (1).avif"
                         alt="aroma tahan lama" class="h-[350px] w-[400px] rounded-2xl">
                     <h3 class="text-center text-4xl text-white font-bold mb-5">Bahan Premium</h3>
                     <p class="text-2xl text-slate-200 text-center">Menggunakan esensi alami berkualitas tinggi untuk
                         aroma yang mewah dan elegan.</p>
                 </div>
-                <div class="flex flex-col gap-8 w-[35%]">
+                <div class="flex flex-col gap-8 lg:w-[35%] w-full">
                     <img src="img/pexels-photo-965989.jpeg" alt="aroma tahan lama"
                         class="h-[350px] w-[400px] rounded-2xl">
                     <h3 class="text-center text-4xl text-white font-bold mb-5">Pilihan Beragam</h3>
@@ -84,8 +88,8 @@
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Rasakan keharuman mewah dan tahan lama dengan
                 The Parfume – diciptakan untuk keunikan Anda.
                 Pesan sekarang dan nikmati diskon eksklusif 20% hanya untuk hari ini!</h2>
-            <div class="flex justify-between gap-10">
-                <div class="flex flex-col gap-4 w-1/4">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <div class="flex flex-col gap-4 lg:w-1/4 w-full">
                     <img src="img/bottle-parfum-table_140725-6504.avif" alt="parfume" class="h-[250px] rounded-xl">
                     <h3 class="text-center text-4xl font-bold mb-5">Attar Parfume</h3>
                     <div class="flex gap-7 justify-center">
@@ -95,7 +99,7 @@
                     <button
                         class="w-full bg-yellow-600 p-4 text-xl text-white font-bold rounded-md hover:bg-yellow-700">Beli</button>
                 </div>
-                <div class="flex flex-col gap-4 w-1/4">
+                <div class="flex flex-col gap-4 lg:w-1/4 w-full">
                     <img src="img/bottle-men-cologne-cufflinks-with-blue-tie-lie-black-luxury-fabric_76080-12617.avif"
                         alt="parfume" class="h-[250px] rounded-xl">
                     <h3 class="text-center text-4xl font-bold mb-5">Dark Parfume</h3>
@@ -106,7 +110,7 @@
                     <button
                         class="w-full bg-yellow-600 p-4 text-xl text-white font-bold rounded-md hover:bg-yellow-700">Beli</button>
                 </div>
-                <div class="flex flex-col gap-4 w-1/4">
+                <div class="flex flex-col gap-4 lg:w-1/4 w-full">
                     <img src="img/top-view-perfume-bottles-poised-stacked-wooden-cutting-boards-harmonizing-against-dark-back_1030899-526.avif"
                         alt="parfume" class="h-[250px] rounded-xl">
                     <h3 class="text-center text-4xl font-bold mb-5">Wood Parfume</h3>
@@ -117,7 +121,7 @@
                     <button
                         class="w-full bg-yellow-600 p-4 text-xl text-white font-bold rounded-md hover:bg-yellow-700">Beli</button>
                 </div>
-                <div class="flex flex-col gap-4 w-1/4">
+                <div class="flex flex-col gap-4 lg:w-1/4 w-full">
                     <img src="img/mockup-perfume-bottle-minimalist-scene_941097-46094.jpg" alt="parfume"
                         class="h-[250px] rounded-xl">
                     <h3 class="text-center text-4xl font-bold mb-5">Desert Parfume</h3>
@@ -135,8 +139,8 @@
     <section class="py-16 bg-yellow-800">
         <div class="w-[80%] mx-auto">
             <h2 class="text-center text-3xl text-white font-bold mb-12">Testimoni Pembeli</h2>
-            <div class="flex justify-between gap-10">
-                <div class="flex flex-col gap-8 w-[35%]">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <div class="flex flex-col gap-8 lg:w-[35%] w-full">
                     <img src="img/33e689502dc3de7306c22dce7e032a0c.jpg" alt="aroma tahan lama"
                         class="h-[350px] w-[400px] rounded-2xl">
                     <h3 class="text-center text-4xl text-white font-bold mb-5">Arif, 28 tahun</h3>
@@ -145,14 +149,14 @@
                         yang memuji aroma saya sejak pakai ini.
                         Worth every penny!</p>
                 </div>
-                <div class="flex flex-col gap-8 w-[35%]">
+                <div class="flex flex-col gap-8 lg:w-[35%] w-full">
                     <img src="img/OIP.jpg" alt="aroma tahan lama" class="h-[350px] w-[400px] rounded-2xl">
                     <h3 class="text-center text-4xl text-white font-bold mb-5">Budi, 32 tahun</h3>
                     <p class="text-2xl text-slate-200 text-center">Awalnya saya agak ragu mencoba parfum baru, tapi
                         ternyata pilihan saya nggak salah. Aromanya fresh, nggak terlalu menyengat, dan bikin percaya
                         diri sepanjang hari. Bahkan pasangan saya bilang parfum ini bikin saya lebih menarik!</p>
                 </div>
-                <div class="flex flex-col gap-8 w-[35%]">
+                <div class="flex flex-col gap-8 lg:w-[35%] w-full">
                     <img src="img/2aa09098720e25d3ff381e6b9c89bb7d.jpg" alt="aroma tahan lama"
                         class="h-[350px] w-[400px] rounded-2xl">
                     <h3 class="text-center text-4xl text-white font-bold mb-5">Dimas, 25 tahun</h3>
@@ -165,7 +169,7 @@
     </section>
 
     <section class="py-16 bg-black">
-        <div class="flex w-[80%] mx-auto justify-between">
+        <div class="flex w-[80%] mx-auto justify-between flex-col gap-9 lg:flex-row">
             <div class="flex flex-col gap-8">
                 <h3 class="text-2xl font-bold text-white">The Parfume</h3>
                 <div class="flex gap-4 items-center text-xl text-white">
@@ -204,7 +208,7 @@
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d520.836933084651!2d107.3749199795056!3d-6.352929406080567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6977e9929795b5%3A0xe02e34c7402245aa!2sNEC%20De%20Griya%20Karawang!5e0!3m2!1sen!2sid!4v1737605382787!5m2!1sen!2sid"
-                    class="h-[300px] w-[425px]" style="border:0;" allowfullscreen="" loading="lazy"
+                    class="h-[300px] lg:w-[425px] w-full" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -212,6 +216,8 @@
     <footer class="text-center bg-black py-10 text-white text-xl">
         &copy; 2025 The Parfume. All rights reserved. Design by Hilmi Zaki Ramadhan.
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
